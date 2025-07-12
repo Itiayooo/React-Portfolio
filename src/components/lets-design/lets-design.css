@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.design {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #1e1e1e;
+}
+
+.design p {
+    font-size: 12px;
+}
+
+.design div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.design input {
+    width: 35%;
+    outline: none;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 0px;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.design button {
+    padding: 3px 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .input-button {
+        flex-direction: column;
+    }
+
+    .input-button input {
+        width: 100%;
+    }
+}

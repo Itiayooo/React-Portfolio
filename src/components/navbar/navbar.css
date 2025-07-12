@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    padding: 10px 0px;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.right {    
+    width: 45%;    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 17px;
+}
+
+.left {    
+    width: 20%;    
+}
+
+li {
+    display: flex;
+    align-items: center;
+    height: 25px;    
+    font-size: 12px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+button {
+    background-color: #FD6F00;
+    height: 100%;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    padding: 1px 15px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.off-canvas-holder:focus-within .off-canvas {
+    display: block;
+}
+
+.off-canvas {
+    position: absolute;
+    right: -50px;
+    display: none;
+}
+
+.canvas-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;    
+    width: 150px;
+}
+
+.canvas-links li {        
+    border: 1px solid white;
+
+    width: 100px;
+}
+
+.canvas-links li:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    nav {
+        width: 68.5%;
+        margin: auto;
+        justify-content: space-between;
+        /* background-color: seagreen; */
+    }
+
+    .right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 80%;
+    }
+}
